@@ -16,4 +16,8 @@ function addErrorClassToAllInputs() {
 }
 
 // addErrorClassToAllInputs();
-setTimeout(addErrorClassToAllInputs, 2000 );
+
+// window.setTimeout(addErrorClassToAllInputs, 2000);
+
+var sendButton = document.getElementById("send-button");
+sendButton.addEventListener("click", addErrorClassToAllInputs);
